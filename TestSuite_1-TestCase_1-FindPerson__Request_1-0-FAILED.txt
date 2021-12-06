@@ -1,0 +1,176 @@
+Status: FAILED
+Time Taken: 48
+Size: 414
+Timestamp: Mon Dec 06 15:35:15 CET 2021
+TestStep: FindPerson - Request 1
+
+----------------- Messages ------------------------------
+[SOAP Response] error: Illegal XML character: 0x1f
+org.apache.xmlbeans.impl.piccolo.io.IllegalCharException: Illegal XML character: 0x1f
+	at org.apache.xmlbeans.impl.piccolo.xml.XMLReaderReader.read(XMLReaderReader.java:169)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yy_refill(PiccoloLexer.java:3477)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:3962)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:713)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:697)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:684)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
+	at com.eviware.soapui.impl.wsdl.support.soap.AbstractSoapVersion.validateSoapEnvelope(AbstractSoapVersion.java:50)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlValidator.assertResponse(WsdlValidator.java:509)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.soap.SoapResponseAssertion.internalAssertResponse(SoapResponseAssertion.java:59)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlMessageAssertion.assertResponse(WsdlMessageAssertion.java:150)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.assertResponse(WsdlTestRequest.java:175)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.setResponse(WsdlTestRequest.java:152)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:380)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[SOAP Response] Illegal XML character: 0x1f
+org.apache.xmlbeans.impl.piccolo.io.IllegalCharException: Illegal XML character: 0x1f
+	at org.apache.xmlbeans.impl.piccolo.xml.XMLReaderReader.read(XMLReaderReader.java:169)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yy_refill(PiccoloLexer.java:3477)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:3962)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:713)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:697)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:684)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
+	at com.eviware.soapui.impl.wsdl.support.soap.AbstractSoapVersion.validateSoapEnvelope(AbstractSoapVersion.java:50)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlValidator.assertResponse(WsdlValidator.java:509)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.soap.SoapResponseAssertion.internalAssertResponse(SoapResponseAssertion.java:59)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlMessageAssertion.assertResponse(WsdlMessageAssertion.java:150)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.assertResponse(WsdlTestRequest.java:175)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.setResponse(WsdlTestRequest.java:152)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:380)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[Contains] Missing token [Reston] in Response
+[Schema Compliance] error: Illegal XML character: 0x1f
+org.apache.xmlbeans.impl.piccolo.io.IllegalCharException: Illegal XML character: 0x1f
+	at org.apache.xmlbeans.impl.piccolo.xml.XMLReaderReader.read(XMLReaderReader.java:169)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yy_refill(PiccoloLexer.java:3477)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:3962)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:713)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:697)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:684)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
+	at com.eviware.soapui.impl.wsdl.support.soap.AbstractSoapVersion.validateSoapEnvelope(AbstractSoapVersion.java:50)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlValidator.assertResponse(WsdlValidator.java:509)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.basic.SchemaComplianceAssertion.assertWsdlResponse(SchemaComplianceAssertion.java:158)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.basic.SchemaComplianceAssertion.internalAssertResponse(SchemaComplianceAssertion.java:107)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlMessageAssertion.assertResponse(WsdlMessageAssertion.java:150)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.assertResponse(WsdlTestRequest.java:175)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.setResponse(WsdlTestRequest.java:152)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:380)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[Schema Compliance] Illegal XML character: 0x1f
+org.apache.xmlbeans.impl.piccolo.io.IllegalCharException: Illegal XML character: 0x1f
+	at org.apache.xmlbeans.impl.piccolo.xml.XMLReaderReader.read(XMLReaderReader.java:169)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yy_refill(PiccoloLexer.java:3477)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:3962)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:713)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:697)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:684)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
+	at com.eviware.soapui.impl.wsdl.support.soap.AbstractSoapVersion.validateSoapEnvelope(AbstractSoapVersion.java:50)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlValidator.assertResponse(WsdlValidator.java:509)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.basic.SchemaComplianceAssertion.assertWsdlResponse(SchemaComplianceAssertion.java:158)
+	at com.eviware.soapui.impl.wsdl.teststeps.assertions.basic.SchemaComplianceAssertion.internalAssertResponse(SchemaComplianceAssertion.java:107)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlMessageAssertion.assertResponse(WsdlMessageAssertion.java:150)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.assertResponse(WsdlTestRequest.java:175)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequest.setResponse(WsdlTestRequest.java:152)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:380)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[Contains Regex] Missing token [(?s).*Maple.*] in Response
+
+----------------- Properties ------------------------------
+Endpoint: https://www.crcind.com:443/csp/samples/SOAP.Demo.cls
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://tempuri.org/SOAP.Demo.FindPerson"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5 (Java/1.8.0_152)
+Host : www.crcind.com:443
+Accept-Encoding : gzip,deflate
+Content-Length : 295
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:FindPerson>
+         <!--Optional:-->
+         <tem:id>32</tem:id>
+      </tem:FindPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : no-cache
+Server : Microsoft-IIS/8.5
+Content-Encoding : gzip
+Set-Cookie : CSPSESSIONID-SP-443-UP-csp-samples-=001000010000yqPPrYTnQz0000ypTxrzJH8gpKGX7D_UwwTQ--; path=/csp/samples/;  secure; httpOnly;
+Set-Cookie : CSPWSERVERID=56cd9b9b1cd3a6104035e2b9b38ec1f2908c3ea3; path=/; httpOnly; secure;
+Pragma : no-cache
+Expires : Thu, 29 Oct 1998 17:04:19 GMT
+#status# : HTTP/1.1 200 OK
+Content-Length : 414
+Date : Mon, 06 Dec 2021 14:35:14 GMT
+Content-Type : text/xml; charset=UTF-8
+X-Powered-By : ASP.NET
+
+
+?      ?R]o?0|???`?KLmZ\WT?+???;???R?????>?B?J??;?3?]n^??`???/?A????????4?{?a????v??+7X??eJ????VnL?Tg9??lY+^?ZQP?ikO}????n??6j?;?vH?>?J!_Hm??????sZ????y??o&B.vR%Q?J??o?gp]?p??I{]3?F6?u??^??$?6 ??u?=?~?u?? ?9?0??~;?????N5S!v?\??I???v8??ycS]?h[7??C??"?'J???????//"{w?;=?PH??????(??G'?;G????oT%?U?*}?O?*???@?????+d?]?????????Y???GJ?^?E?  ?? pq?r?  
